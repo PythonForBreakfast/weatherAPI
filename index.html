@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>What is the weather?</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,28 +13,42 @@
             <div id="weatherInfo">
                 <div id="days"> 
                     <div class="day">
-                        
-                        <h4 id="day">Tuesday</h4>
+                        <span class="label">Today</span>
+                        <h4 id="day"></h4>
                         <img src="images/sun.png" />
-                        <h5 id="temperature">75°F</h5>   
+                        <span class="label">Current Temperature</span>
+                        <h5 id="temperature"></h5>
+                        <div class="largeContainer">
+                            <div class="smallContainer">
+                                <span class="label">High</span>
+                                <span id="highTemp" class="subText"></span>
+                                <span class="label">Sunrise</span>
+                                <span id="sunrise" class="subText"></span>
+                                <span class="label">Humidity</span>
+                                <span id="humidity" class="subText"></span>
+                            </div>
+                            <div class="smallContainer">
+                                <span class="label">Low</span>   
+                                <span id="lowTemp" class="subText"></span>
+                                <span class="label">Sunset</span>
+                                <span id="sunset" class="subText"></span>
+                                <span class="label">Wind Speed</span>
+                                <span id="windSpeed" class="subText"></span> 
+                            </div>  
+                        </div>
                     </div>
-                </div>
-                <div id="info">
-                    <h4>Humidity: <span id="humidity">test</span></h4>
-                    <h4>Wind Speed: <span id="windSpeed">test</span></h4>
-                    <h4>High: <span id="highTemp">test</span></h4> 
-                    <h4>Low: <span id="lowTemp">test</span></h4>
-                    <h4>Sunrise: <span id="sunrise">test</span></h4>   
-                    <h4>Sunset: <span id="sunset">test</span></h4>      
                 </div>
             </div>
             <div id="cityInfo">
-                <h1 id="cityName">New York City, NY</h1>
+                <h1 id="cityName"></h1>
                 <div id="timeDate">
-                    <h2 id="time">17:30:35</h2>
-                    <h3 id="date">September 3rd, 2018</h3>
+                    <h3 id="date"></h3>
                 </div>
             </div>
+        </div>
+        <div id="search">
+            <input />
+            <button>Get Weather</button>
         </div>
     </main>
     <script
