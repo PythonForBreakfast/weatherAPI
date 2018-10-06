@@ -15,7 +15,7 @@
                     <div class="day">
                         <span class="label">Today</span>
                         <h4 id="day"></h4>
-                        <img src="images/sun.png" />
+                        <img id="icon" src="images/sun.png" />
                         <span class="label">Current Temperature</span>
                         <h5 id="temperature"></h5>
                         <div class="largeContainer">
@@ -47,8 +47,8 @@
             </div>
         </div>
         <div id="search">
-            <input />
-            <button>Get Weather</button>
+            <input id="zip" type="text" size="15" />
+            <button onclick="getWeather()">Get Weather</button>
         </div>
     </main>
     <script
