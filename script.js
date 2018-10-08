@@ -24,8 +24,8 @@
                 .css("display", "flex")
                 .hide()
                 .fadeIn("slow");
+                
         }
-        
     }
     
     function displayWeather(zipCode) {
@@ -33,7 +33,7 @@
             $("#cityName").text(data.name);
             $("#icon").attr("src","images/" + data.weather[0].icon + ".png");
             $("#day").text(day);
-            $("#date").text(month + " " + dtime.getDay() + ", 2018");
+            $("#date").text(month + " " + dtime.getDate() + ", 2018");
             $("#temperature").text(Math.floor(data.main.temp * (9/5) -459.67) + "°F");
             $("#time").html(convertTime(data.dt));
             $("#humidity").html(data.main.humidity + "%");
