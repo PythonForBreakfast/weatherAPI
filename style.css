@@ -191,3 +191,57 @@ h6 {
     font-size: 18px;
     font-weight: bold;
 }
+
+@media only screen and (max-height: 900px) {
+    #search {
+        margin: 10px;
+        width: 280px;
+    }
+    #searchStatus {
+        padding-left: 5px;
+    }
+    #search input {
+        width: 160px;
+    }
+    #innerSearch button {
+        width: 100px;
+        font-size: 13px;
+    }
+    #container {
+        width: 300px;
+        max-height: 90vh;
+        height: auto;
+    }
+    #timeDate {
+        margin-bottom: 20px;
+    }
+    #cityName {
+        margin-bottom: 0;
+    }
+    #cityInfo {
+        padding: .4em 0;
+        height: auto;
+    }
+    #icon {
+        height: 7em;
+    }
+
+
+    .subText {
+        font-size: 14px;
+    }
+    .label {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    h5 {
+        font-size: 28px;
+        margin: 2px 0 0 0;
+    }
+    h4 {
+        font-size: 28px;
+    }
+
+
+}
